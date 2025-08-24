@@ -85,26 +85,44 @@ src/
    npm install
    ```
 
-3. **Prepare data files**
+3. **Configure data source**
 
-   The application includes comprehensive example data files to help you get started:
+   The application supports two data sources that can be configured via environment variables:
 
-   - **Example Files** (for reference):
+   **Option A: Local Data Folder (Default)**
 
-     - `data/users.example.json` - Sample user demographics with 5 test users
-     - `data/credit_cards.example.json` - Sample credit cards with various limits and statuses
-     - `data/transactions.example.json` - Sample transactions across different categories
+   ```bash
+   # .env.local
+   DATA_SOURCE=local  # or leave empty/undefined
+   ```
 
-   - **Actual Data Files** (you need to create these):
+   - Uses files in the `data/` directory
+   - Requires `users.json`, `credit_cards.json`, `transactions.json`
+   - Best for development and when you have files locally
 
-     - `data/users.json` - Your actual user data
-     - `data/credit_cards.json` - Your actual credit card data
-     - `data/transactions.json` - Your actual transaction data
+   **Option B: Vercel Blob Storage**
 
-   - **Security Note**:
-     - Example files are safe to commit to version control
-     - Actual data files are automatically ignored by `.gitignore`
-     - Never commit real financial data to repositories
+   ```bash
+   # .env.local
+   DATA_SOURCE=blob
+   BLOB_READ_WRITE_TOKEN=your_vercel_blob_token
+   ```
+
+   - Fetches data from Vercel Blob storage
+   - Requires uploading files to Vercel Blob first
+   - Best for production deployments and cloud storage
+
+   **Example Files** (for reference):
+
+   - `data/users.example.json` - Sample user demographics with 5 test users
+   - `data/credit_cards.example.json` - Sample credit cards with various limits and statuses
+   - `data/transactions.example.json` - Sample transactions across different categories
+
+   **Security Note:**
+
+   - Example files are safe to commit to version control
+   - Actual data files are automatically ignored by `.gitignore`
+   - Never commit real financial data to repositories
 
 4. **Start the development server**
 
@@ -125,6 +143,27 @@ pnpm start
 ```
 
 ## ⚙️ Configuration
+
+### Data Source Configuration
+
+The application supports flexible data source configuration via the `DATA_SOURCE` environment variable:
+
+| Value             | Description                    | Use Case                      |
+| ----------------- | ------------------------------ | ----------------------------- |
+| `local` (default) | Load from local `data/` folder | Development, local testing    |
+| `blob`            | Load from Vercel Blob storage  | Production, cloud deployments |
+
+### Environment Variables
+
+Copy `.env.example` to `.env.local` and configure:
+
+```bash
+# Data source selection
+DATA_SOURCE=local  # or 'blob'
+
+# Required only for DATA_SOURCE=blob
+BLOB_READ_WRITE_TOKEN=your_token_here
+```
 
 ### Analysis Parameters
 
