@@ -1,0 +1,79 @@
+{
+  "Users": [
+    {
+      "ID": "1000",
+      "CustomerNumber": "1234567890",
+      "Name": "John",
+      "Surname": "Doe",
+      "Email": "john.doe@example.com",
+      "Phone": "+1555123456",
+      "Address": "123 Main Street, Apt 4B",
+      "City": "New York",
+      "Gender": "Male",
+      "BirthDate": "1985-03-15",
+      "Profession": "Software Engineer",
+      "CreatedAt": "2020-01-15T00:00:00",
+      "UpdatedAt": "2024-08-24T00:00:00"
+    },
+    {
+      "ID": "1001",
+      "CustomerNumber": "2345678901",
+      "Name": "Jane",
+      "Surname": "Smith",
+      "Email": "jane.smith@example.com",
+      "Phone": "+1555234567",
+      "Address": "456 Oak Avenue",
+      "City": "Los Angeles",
+      "Gender": "Female",
+      "BirthDate": "1990-07-22",
+      "Profession": "Marketing Manager",
+      "CreatedAt": "2020-02-10T00:00:00",
+      "UpdatedAt": "2024-08-24T00:00:00"
+    },
+    {
+      "ID": "1002",
+      "CustomerNumber": "3456789012",
+      "Name": "Michael",
+      "Surname": "Johnson",
+      "Email": "michael.johnson@example.com",
+      "Phone": "+1555345678",
+      "Address": "789 Pine Street",
+      "City": "Chicago",
+      "Gender": "Male",
+      "BirthDate": "1988-11-08",
+      "Profession": "Doctor",
+      "CreatedAt": "2020-03-05T00:00:00",
+      "UpdatedAt": "2024-08-24T00:00:00"
+    },
+    {
+      "ID": "1003",
+      "CustomerNumber": "4567890123",
+      "Name": "Emily",
+      "Surname": "Davis",
+      "Email": "emily.davis@example.com",
+      "Phone": "+1555456789",
+      "Address": "321 Cedar Lane",
+      "City": "Houston",
+      "Gender": "Female",
+      "BirthDate": "1992-12-03",
+      "Profession": "Teacher",
+      "CreatedAt": "2020-04-20T00:00:00",
+      "UpdatedAt": "2024-08-24T00:00:00"
+    },
+    {
+      "ID": "1004",
+      "CustomerNumber": "5678901234",
+      "Name": "David",
+      "Surname": "Wilson",
+      "Email": "david.wilson@example.com",
+      "Phone": "+1555567890",
+      "Address": "654 Maple Drive",
+      "City": "Phoenix",
+      "Gender": "Male",
+      "BirthDate": "1983-05-18",
+      "Profession": "Lawyer",
+      "CreatedAt": "2020-05-12T00:00:00",
+      "UpdatedAt": "2024-08-24T00:00:00"
+    }
+  ]
+}

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Sensitive financial data files - DO NOT COMMIT REAL DATA
+data/credit_cards.json
+data/transactions.json
+data/users.json
